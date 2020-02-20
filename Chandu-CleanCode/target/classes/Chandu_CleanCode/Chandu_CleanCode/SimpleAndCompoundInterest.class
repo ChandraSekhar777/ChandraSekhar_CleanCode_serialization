@@ -1,0 +1,22 @@
+ ˛∫æ   3 à  >Chandu_CleanCode/Chandu_CleanCode/SimpleAndCompoundInterest  java/lang/Object principal_amount D rate_of_interest time_in_years out Ljava/io/BufferedWriter; s Ljava/util/Scanner; <init> ()V Code
+     LineNumberTable LocalVariableTable this @LLekhya_CleanCode/Lekhya_CleanCode/Simple_and_Compound_Interest; calculateInterest 
+Exceptions  java/io/IOException  java/util/Scanner	    java/lang/System   ! in Ljava/io/InputStream;
+  #  $ (Ljava/io/InputStream;)V	  &   ( java/io/BufferedWriter * java/io/OutputStreamWriter , java/io/FileOutputStream	 . 0 / java/io/FileDescriptor 	 1 Ljava/io/FileDescriptor;
+ + 3  4 (Ljava/io/FileDescriptor;)V 6 ASCII
+ ) 8  9 +(Ljava/io/OutputStream;Ljava/lang/String;)V
+ ' ;  < (Ljava/io/Writer;I)V	  > 	 
+ @ Enter principal amount : 
+ ' B C D write (Ljava/lang/String;)V
+ ' F G  flush
+  I J K 
+nextDouble ()D	  M   O #Enter rate of interest per annum : 	  Q   S Enter time in years : 	  U  @Y       Y java/lang/StringBuilder [ Simple interest = 
+ X ]  D
+ X _ ` a append (D)Ljava/lang/StringBuilder; c 
+
+ X e ` f -(Ljava/lang/String;)Ljava/lang/StringBuilder;
+ X h i j toString ()Ljava/lang/String; l <===========================================================
+ n XTo calculate compound interest enter number of times interest applied per time period : 
+  p q r nextInt ()I
+ t v u java/lang/Math w x pow (DD)D z Compound interest =  | (Exception arised,please give valid input ~ java/lang/Exception simple_interest no_interest_applied I final_amount e Ljava/lang/Exception; StackMapTable 
+SourceFile !Simple_and_Compound_Interest.java !                          	 
+                 /     *∑ ±                                    G    j*ª Y≤ ∑ "µ %*ª 'Yª )Yª +Y≤ -∑ 25∑ 7 ∑ :µ =*¥ =?∂ A*¥ =∂ E**¥ %∂ Hµ L*¥ =N∂ A*¥ =∂ E**¥ %∂ Hµ P*¥ =R∂ A*¥ =∂ E**¥ %∂ Hµ T*¥ L*¥ Tk*¥ Pk VoH*¥ =ª XYZ∑ \'∂ ^b∂ d∂ g∂ A*¥ =∂ E*¥ =k∂ A*¥ =∂ E*¥ =m∂ A*¥ =∂ E*¥ %∂ o>*¥ L*¥ Pdháocá*¥ Tk∏ sk9*¥ =ª XYy∑ \*¥ Lg∂ ^b∂ d∂ g∂ A*¥ =∂ E*¥ =k∂ A*¥ =∂ Eß 5L*ª 'Yª )Yª +Y≤ -∑ 25∑ 7 ∑ :µ =*¥ ={∂ A*¥ =∂ E±   47 }     z       /  8  ?  J  S  Z  e  n  u  Ä  ì  Ø   ∂ ! ø " ∆ $ œ % ÷ & ﬁ ' ˚ ( )$ *- +4 ,7 -8 /Y 0b 1i 3    4   j     ì °    ﬁ V Ä Å  ˚ 9 Ç  8 1 É Ñ  Ö   	 ˜7 }1  Ü    á

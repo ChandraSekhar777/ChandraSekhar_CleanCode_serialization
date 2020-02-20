@@ -1,0 +1,23 @@
+ ˛∫æ   3 x  DChandu_CleanCode/Chandu_CleanCode/HouseConstructionCostEstimation  java/lang/Object out Ljava/io/BufferedWriter; s Ljava/util/Scanner; material_type I area_of_house D <init> ()V Code
+     LineNumberTable LocalVariableTable this FLLekhya_CleanCode/Lekhya_CleanCode/House_Construction_Cost_Estimation; costCalculation 
+Exceptions  java/io/IOException  java/util/Scanner	    java/lang/System   ! in Ljava/io/InputStream;
+  #  $ (Ljava/io/InputStream;)V	  &   ( java/io/BufferedWriter * java/io/OutputStreamWriter , java/io/FileOutputStream	 . 0 / java/io/FileDescriptor  1 Ljava/io/FileDescriptor;
+ + 3  4 (Ljava/io/FileDescriptor;)V 6 ASCII
+ ) 8  9 +(Ljava/io/OutputStream;Ljava/lang/String;)V
+ ' ;  < (Ljava/io/Writer;I)V	  >   @ ßEnter your choice from available materials:
+1.Standard material
+2.Above standard material
+3.High standard material
+4. High standard materials and fully automated home
+
+ ' B C D write (Ljava/lang/String;)V
+ ' F G  flush
+  I J K nextInt ()I	  M 	 
+ O  Enter total area of the house : 
+  Q R S 
+nextDouble ()D	  U  @í¿     @óp     @ú      @£à      _ Invalid material type a java/lang/StringBuilder c +Total construction cost of the house is Rs.
+ ` e  D
+ ` g h i append (D)Ljava/lang/StringBuilder;
+ ` k l m toString ()Ljava/lang/String; o *Exception arised, please enter valid input q java/lang/Exception cost e Ljava/lang/Exception; StackMapTable 
+SourceFile 'House_Construction_Cost_Estimation.java !                    	 
+                 /     *∑ ±                                    Ì    *ª Y≤ ∑ "µ %*ª 'Yª )Yª +Y≤ -∑ 25∑ 7 ∑ :µ =*¥ =?∂ A*¥ =∂ E**¥ %∂ Hµ L*¥ =N∂ A*¥ =∂ E**¥ %∂ Pµ TH*¥ L™   M            )   5   A V*¥ TkHß 7 X*¥ TkHß + Z*¥ TkHß  \*¥ TkHß *¥ =^∂ A*¥ =∂ E*¥ =ª `Yb∑ d'∂ f∂ j∂ A*¥ =∂ Eß 5L*ª 'Yª )Yª +Y≤ -∑ 25∑ 7 ∑ :µ =*¥ =n∂ A*¥ =∂ E±  e Ê È p     r       /  8  ?  J  S  Z  e  g  à  ë  î  ù   † ! © " ¨ # µ $ ∏ % ¡ & » ) ﬂ * Ê + È , Í . / 0 5             g  r   Í 1 s t  u    ¸ àˇ      p1  v    w
